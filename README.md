@@ -2,6 +2,6 @@
 
 Practicando Plataforma Web con Meteor - React - MongoDB .
 
-###  Referecia
+## Referencia
 
-* (http://themeteorchef.com/base)
+[Para más información](http://themeteorchef.com/base)
