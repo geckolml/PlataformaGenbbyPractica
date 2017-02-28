@@ -3,13 +3,12 @@ import { Roles } from 'meteor/alanning:roles';
 import { Accounts } from 'meteor/accounts-base';
 
 const users = [{
-  email: 'admin@admin.com',
-  password: 'password',
+  email: 'genbby.uni@gmail.com',
+  password: 'genbby.uni17',
   profile: {
-    name: { first: 'Carl', last: 'Winslow' },
+    name: { first: 'Genbby', last: 'UNI' },
   },
   roles: ['admin'],
-  services:"",
 }];
 
 users.forEach(({ email, password, profile, roles }) => {
