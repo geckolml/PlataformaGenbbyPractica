@@ -36,8 +36,6 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 mdg:validated-method
 react-meteor-data
 dburles:factory
-standard-minifiers-css
-standard-minifiers-js
 ddp-rate-limiter@1.0.6
 scholtzm:accounts-steam
 service-configuration
