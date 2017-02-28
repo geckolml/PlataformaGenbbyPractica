@@ -3,7 +3,7 @@ Meteor.startup(() => {
     { service: 'steam' },
     {
       $set: {
-        loginStyle: 'redirect',
+        loginStyle: 'popup',
         timeout: 10000
       }
     }

@@ -47,6 +47,9 @@ const validate = () => {
         required: true,
         minlength: 6,
       },
+      id_steam: {
+        required: false,
+      },
     },
     messages: {
       firstName: {
@@ -62,6 +65,9 @@ const validate = () => {
       password: {
         required: 'Necesita su contraseña.',
         minlength: 'Usa al menos 6 caracteres, porfavor.',
+      },
+      id_steam:{
+        required: false,
       },
     },
     submitHandler() { signup(); },

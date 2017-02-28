@@ -36,6 +36,9 @@ const validate = () => {
       password: {
         required: true,
       },
+      id_steam: {
+        required: false,
+      },
     },
     messages: {
       emailAddress: {
