@@ -32,7 +32,6 @@ static-html@1.1.11
 xolvio:cleaner
 practicalmeteor:mocha
 xolvio:backdoor
-insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 mdg:validated-method
 react-meteor-data
 dburles:factory
