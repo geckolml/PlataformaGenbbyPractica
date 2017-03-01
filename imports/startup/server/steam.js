@@ -4,7 +4,7 @@ Meteor.startup(() => {
     {
       $set: {
         loginStyle: 'popup',
-        timeout: 10000
+        timeout: 10000000
       }
     }
   );
