@@ -12,13 +12,17 @@ const Index = () => (
       className="pull-center"
       onClick={(event) => {
             Meteor.loginWithSteam();
+
             var idSteam = Meteor.user().profile.id; // ID de Steam
-            if (idSteam){
+              Meteor.call('remove',String(idSteam)); // Elimina el usuario creado por la API de steam por defecto.
+
                 Meteor.call('update',String(Meteor.userId()),String(idSteam)); // Agrega el ID de steam al documento del usuario loggeado.
-            }
+
 
             console.log(Meteor.userId()); // Imprime ID del usuario
-            Meteor.call('remove',String(idSteam)); // Elimina el usuario creado por la API de steam por defecto.
+            console.log(idSteam); // Imprime ID del usuario
+
+
           }}>Vincular tu cuenta de Steam</Button>
   </Jumbotron>
 );

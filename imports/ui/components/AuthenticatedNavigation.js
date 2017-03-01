@@ -5,13 +5,13 @@ import { Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Meteor } from 'meteor/meteor';
 
 const handleLogout = () => Meteor.logout(() => browserHistory.push('/login'));
-
+/*
 const userName = () => {
   const user = Meteor.user();
   const name = user && user.profile ? user.profile.name : '';
   return user ? `${name.first} ${name.last}` : '';
 };
-
+*/
 const AuthenticatedNavigation = ({ currentPage, setCurrentPage }) => (
   <div>
     <Nav>
@@ -20,10 +20,10 @@ const AuthenticatedNavigation = ({ currentPage, setCurrentPage }) => (
         eventKey={ 1 }
         onClick={(event) => { setCurrentPage(event, { page: 'index' }); }}
       >Index</NavItem>
-      
+
     </Nav>
     <Nav pullRight>
-      <NavDropdown eventKey={ 3 } title={ userName() } id="basic-nav-dropdown">
+      <NavDropdown eventKey={ 3 } title={ "Welcome" } id="basic-nav-dropdown">
         <MenuItem eventKey={ 3.1 } onClick={ handleLogout }>Logout</MenuItem>
       </NavDropdown>
     </Nav>
