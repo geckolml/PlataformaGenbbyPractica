@@ -15,6 +15,9 @@ const getUserData = () => ({
       last: document.querySelector('[name="lastName"]').value,
     },
   },
+  id_steam:{
+
+  },
 });
 
 const signup = () => {
