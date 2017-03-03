@@ -23,7 +23,6 @@ const Index = () => (
                          Meteor.call('update',String(id_current),String(idSteam)); // Agrega el ID de steam al documento del usuario loggeado.
                          console.log(id_current); // Imprime ID del usuario
                          console.log(idSteam); // Imprime ID del usuario
-
                     }
 
                  });

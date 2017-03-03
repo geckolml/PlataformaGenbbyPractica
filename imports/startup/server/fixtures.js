@@ -12,12 +12,12 @@ const users = [{
   id_steam:"76561198103503560",
 }];
 
-users.forEach(({ email, password, profile,id_steam, roles }) => {
+users.forEach(({ email, password, profile, roles,id_steam, cod_runa}) => {
   const userExists = Meteor.users.findOne({ 'emails.address': email });
 
   if (!userExists) {
 
-    const userId = Accounts.createUser({ email, password, profile,id_steam   });
+    const userId = Accounts.createUser({ email, password, profile,id_steam,cod_runa});
     Roles.addUsersToRoles(userId, roles);
 
   }
