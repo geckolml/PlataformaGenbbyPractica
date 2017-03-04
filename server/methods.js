@@ -8,7 +8,9 @@ Meteor.methods({
 'update'(id,idsteam){
     check(id,String);
     check(idsteam,String);
-    Meteor.users.update({_id:id},{$set:{ "id_steam": idsteam }});
+    Meteor.users.update({_id:id},{$set:{
+      "services.steam.id_steam": idsteam ,
+    }});
 
 },
 // Eliminar la cuenta creada por steam de la base de datos

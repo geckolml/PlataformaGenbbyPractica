@@ -15,9 +15,10 @@ const getUserData = () => ({
       last: document.querySelector('[name="lastName"]').value,
     },
   },
-  id_steam:{
 
-  },
+
+
+  //id_steam:document.querySelector('[name="id_steam"]').value,
 });
 
 const signup = () => {
@@ -50,9 +51,7 @@ const validate = () => {
         required: true,
         minlength: 6,
       },
-      id_steam: {
-        required: false,
-      },
+
     },
     messages: {
       firstName: {
@@ -69,9 +68,7 @@ const validate = () => {
         required: 'Necesita su contraseña.',
         minlength: 'Usa al menos 6 caracteres, porfavor.',
       },
-      id_steam:{
-        required: false,
-      },
+
     },
     submitHandler() { signup(); },
   });
